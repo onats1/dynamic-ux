@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/basicTransition">
+    <fragment
+        android:id="@+id/basicTransition"
+        android:name="com.example.transitionsanddynamicui.ui.secondActivity.fragments.BasicTransition"
+        android:label="fragment_basic_transition"
+        tools:layout="@layout/fragment_basic_transition" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/customTransition"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/customTransition"
+        android:name="com.example.transitionsanddynamicui.ui.secondActivity.fragments.CustomTransition"
+        android:label="fragment_custom_transition"
+        tools:layout="@layout/fragment_custom_transition">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/basicTransition"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+</navigation>
