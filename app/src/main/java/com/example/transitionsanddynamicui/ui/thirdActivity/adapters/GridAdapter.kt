@@ -46,11 +46,10 @@ class GridAdapter() : RecyclerView.Adapter<GridAdapter.ImageViewHolder>() {
     inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         init {
-
             itemView.setOnClickListener{
 
                 onClickListener?.let {
-                    onClickListener!!.onImageClick(adapterPosition)
+                    onClickListener!!.onImageClick(adapterPosition, itemView)
                    // Toast.makeText(context, "viewholder", Toast.LENGTH_LONG).show()
                 }
 

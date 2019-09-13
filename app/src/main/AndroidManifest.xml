@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.thirdActivity.GridToPager"></activity>
+        <activity android:name=".ui.fourthActivity.MotionsActivity"></activity>
+        <activity android:name=".ui.thirdActivity.GridToPager" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".ui.secondActivity.SecondActivity" />
         <activity android:name=".ui.mainActivity.MainActivity">
